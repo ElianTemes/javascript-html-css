@@ -91,11 +91,8 @@
     background-color: #111;
     color: white;
 }
-span{ 
+#title{ 
     font-family: 'Poppins', sans-serif;
-    border-style: none;
-    border-color: #000000;
-    border-width: 3.5px;
     padding: 3px 15%;
     margin: 25px 40%;
     white-space: nowrap;
@@ -107,26 +104,33 @@ span{
 body{
     background-color: #1f2029;
 }
-#value{
-    display: inline-flex;
+#valorCuota{
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 550;
     color: #102770;
-    white-space: nowrap;
     text-align: center;
     letter-spacing: 1px;
+    padding-left: 15px;
+}
+#value{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: #102770;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-left: 15px;
 }
 .result{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 40%;
-    margin-left: 2%;
-    margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 210px 10px 15px;
     border-radius: 4px;
     height: 30px;
-    padding: 8px 5px 10px 1px;
-    align-items: center;
+    padding: 8px 1px 10px 2px;
     background-color: #ffeba7;
     color: #102770;
 }

@@ -3,17 +3,24 @@ function calculateInterest(monto, interes){
     interest = monto + interest;
     return interest;
 }
+function check(monto, interes, meses, fee){
+    if(isNaN(interes) || isNaN(meses) || isNaN(monto)){
+        return 0;
+    }
+    else{
+        return fee;
+    }
+}
 function calculateFee(){
-    document.getElementById("value").innerHTML = "Valor Cuota: ";
+    document.getElementById("value").innerHTML = 0;
     let interes = parseFloat(document.getElementById("interes").value);
     let meses = parseInt(document.getElementById("meses").value);
     let monto = parseFloat(document.getElementById("monto").value);
     let fee = calculateInterest(monto, interes) / meses;
-    document.getElementById("value").innerHTML += fee;
-    console.log(interes);
-    console.log(meses);
-    console.log(monto);
+    fee = check(monto, interes, meses, fee);
+    fee = fee.toFixed(2);
+    document.getElementById("value").innerHTML = fee;
     return fee;
 }
-
-document.getElementById("enviar").onclick = calculateFee;
+const btn = document.getElementById("enviar");
+btn.addEventListener('click', calculateFee);
