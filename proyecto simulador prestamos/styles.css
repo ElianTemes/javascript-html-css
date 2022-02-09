@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.center {
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, cyan, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+}
+  
+@keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+}
+
+#titleCalculator{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #8A4FFF;
+}
+
+#titleList{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #8A4FFF;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.list{
+    list-style: none;
+    display: flex;
+    padding-left: 1px;
+}
+#prestamo{
+    font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.7;
+    height: 35px;
+    color: #CCC9DC;
+}
+.listItems{
+    font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+	line-height: 1.7;
+    height: 35px;
+    color: #CCC9DC;
+    padding-left: 5px;
+    padding-right: 32px;
+    border-style: solid;
+    border-width: 1px;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 3px;
+    margin-right: 10px;
+    border-width: 3px;
+    padding: 10px 1% 15px;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: rgb(30, 221, 164);
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+    width: 100%;
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.card-loans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-width: 3px;
+    padding: 10px 0.5% 15px;
+    border-style: solid;
+    border-color: rgb(30, 221, 164);
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+    width: 100%;
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.cLabels{
+    font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.7;
+    height: 35px;
+    color: #CCC9DC;
+}
+
+.cForms{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.input{
+    padding: 5px 20px;
+    padding-left: 20px;
+    height: 35px;
+    width: 250px;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: #2f3141;
+    border: none;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+
+.input:focus {
+    background-color: rgb(0, 14, 31);
+    border: 1.5px solid #555;
+}
+
+#enviar{
+    border-radius: 4px;
+    margin: 1px auto 40px auto;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 10px 5%;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background-color: #ffeba7;
+    color: #102770;
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+}
+
+#enviar:hover{
+    background-color: #111;
+    color: white;
+}
+
+body{
+    background-color: #1f2029;
+}
