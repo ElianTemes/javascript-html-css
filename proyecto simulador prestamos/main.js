@@ -12,6 +12,12 @@ function check(monto, interes, meses, fee){
         return fee;
     }
 }
+function cleanForm(){
+    document.getElementById("nombre").value = "";
+    document.getElementById("monto").value = "";
+    document.getElementById("meses").value = "";
+    document.getElementById("interes").value = "";
+}
 class Data{
     constructor(nombre, monto, meses, interes){
         this.nombre = nombre;
@@ -51,4 +57,5 @@ btn.addEventListener('click', () => {
                         alert(JSON.stringify(data, null, 4));
                         let prestamo = document.getElementById("prestamo");
                         prestamo.innerText = JSON.stringify(data, null, 4);
+                        cleanForm();
                     } )
